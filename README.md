@@ -1,8 +1,8 @@
-# Connect4-Neuroevo
+# 🎓 Connect4-Neuroevo
 
 This project explores **neuroevolution** applied to Connect 4 using the **NEAT algorithm** (NeuroEvolution of Augmenting Topologies). The goal is to evolve neural networks capable of playing Connect 4 against various opponents, from random agents to strategic greedy players.
 
-## Project Overview
+## 📋 Project Overview
 
 The notebook contains a complete pipeline for:
 
@@ -12,7 +12,7 @@ The notebook contains a complete pipeline for:
 - **Fitness Functions**: Various approaches including symmetric training, curriculum learning, and co-evolution
 - **Analysis Tools**: Fitness plotting, network visualization, and agent comparison matrices
 
-### Key Experiments
+### 🧪 Key Experiments
 
 | Experiment | Description |
 |------------|-------------|
@@ -23,14 +23,14 @@ The notebook contains a complete pipeline for:
 | Co-evolution | Training against population peers |
 | Encoding Comparison | Simple vs Double vs Pattern-based |
 
-### Main Findings
+### 🔍 Main Findings
 
 - NEAT successfully evolves agents for simple scenarios (beating random opponents)
 - Feed-forward networks struggle with strategic depth required against greedy agents
 - Networks fail to develop defensive/reactive play capabilities
 - Larger populations with fewer generations outperform the inverse configuration
 
-## Repository Structure
+## 📁 Repository Structure
 
 ├── connect4-neuroevo.ipynb - Main notebook with all experiments
 
@@ -42,15 +42,15 @@ The notebook contains a complete pipeline for:
 
 └── README.md - Project overview and instructions
 
-## Quick Start
+## 🚀 Quick Start
 
-### Installation
+### 📦 Installation
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Running the Notebook
+### ▶️ Running the Notebook
 
 The notebook uses a control variable `execute_all_cells` at the top:
 
@@ -65,9 +65,9 @@ execute_all_cells = False  # Default
 | **Review Mode** | `False` | Loads pre-saved genomes from `best_genome/`, runs demo games and network visualizations. Fast execution (~minutes) |
 | **Full Training Mode** | `True` | Re-runs all NEAT evolution experiments from scratch. Very slow execution (~hours) |
 
-**Recommendation**: Keep `execute_all_cells = False` unless you want to reproduce the full evolutionary training. All analysis cells (game demos, network plots, comparison matrices) will still execute using the saved best genomes.
+**💡 Recommendation**: Keep `execute_all_cells = False` unless you want to reproduce the full evolutionary training. All analysis cells (game demos, network plots, comparison matrices) will still execute using the saved best genomes.
 
-### Pre-trained Genomes
+### 🧠 Pre-trained Genomes
 
 The `best_genome/` folder contains evolved networks from various experiments:
 
@@ -77,7 +77,7 @@ The `best_genome/` folder contains evolved networks from various experiments:
 - `specialist_first.pkl` / `specialist_second.pkl` - Position-specialized agents
 - `compare_encode*.pkl` - Different encoding methods
 
-## Dependencies
+## 📚 Dependencies
 
 - `neat-python` - NEAT implementation
 - `numpy` - Numerical operations
@@ -85,6 +85,6 @@ The `best_genome/` folder contains evolved networks from various experiments:
 - `networkx` - Network visualization
 - `pandas` / `seaborn` - Comparison matrices
 
-## Acknowledgments
+## 🎓 Acknowledgments
 
 This project was developed as part of a global and multi-objective optimization course, exploring the capabilities and limitations of neuroevolution for game-playing AI.
