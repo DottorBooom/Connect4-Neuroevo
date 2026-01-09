@@ -33,9 +33,13 @@ The notebook contains a complete pipeline for:
 ## Repository Structure
 
 ├── connect4-neuroevo.ipynb - Main notebook with all experiments
+
 ├── neat_config.txt - NEAT configuration parameters
+
 ├── best_genome/ - Saved evolved genomes
+
 ├── requirements.txt - Python dependencies
+
 └── README.md - Project overview and instructions
 
 ## Quick Start
